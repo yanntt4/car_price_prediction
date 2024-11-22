@@ -6,11 +6,9 @@ Data can be found on Kaggle website : https://www.kaggle.com/competitions/playgr
 
 
 # Results
-![image](https://github.com/user-attachments/assets/3c3061f8-3327-4fef-b75a-8e8e27ab7bbd)
-![image](https://github.com/user-attachments/assets/8f1770f3-bbf4-4440-a0ea-3c9cdbc51a02)
-![image](https://github.com/user-attachments/assets/cbc3e9fc-1354-459b-9b34-73dad002ceac)
-
+<img src="https://github.com/yanntt4/car_price_prediction/blob/main/readme_photo/preparation.JPG" alt="Alt Text" width="300" height="200">
 <img src="https://github.com/yanntt4/car_price_prediction/blob/main/readme_photo/completion.JPG" alt="Alt Text" width="300" height="200">
+<img src="https://github.com/yanntt4/car_price_prediction/blob/main/readme_photo/result.JPG" alt="Alt Text" width="300" height="200">
 
 
 # Usage
