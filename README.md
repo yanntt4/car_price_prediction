@@ -12,35 +12,9 @@ Data can be found on Kaggle website : https://www.kaggle.com/competitions/playgr
 
 
 # Usage
-This application was designed specifically with CARGOWISE data extract. 
-Nevertheless, it can be used with an excel table containing the following columns :
-- "Shipment ID" (Shipment identification number)
-- "Consol ID" (Container identificatio number)
-- "Type" (Container type)
-- "Master/Lead" (The master shipment can regroup several shipments)
-- "Trans." (Transport method)
-- "Origin" (Code for origin place)
-- "Dest." (Code for destination place)
-- "ETD" (Estimated time of departure)
-- "ETA" (Estimated time of arrival)
-- "Weight" (Ware weight)
-- "UW" (Weight unit)
-- "Volume" (Ware volume)
-- "UV" (Volume unit)
-- "Pic. Trn." (Company pickup transport name)
-- "Dlv. Trn." (Company delivery transport name)
-- "Pickup From Address" (adress for pickup)
-- "Delivery To Address" (adress for delivery)
-- "1st Load" (1st place where main transport starts)
-- "Last Disc" (last place where main transport ends)
-
-The table must be set in the folder `X/2024/source`
-
-The program can be launched using the script *main.py*. The parameters can be modified using the class `Parameters()`.
-The year inside the class `Parameters()` needs to correspond to the name of the folder. 
-
-During execution, some messages are printed, giving indication on the execution. 
-If data are missing, it must be added to the file `BDD.xlsx`
+Application can be used for two main usages :
+- Analyse data to create machine learning/deep learning model to estimate car price. 6 algorithms can be used to create model : Random Forest, Gradient Boosting, Neural Network, Extrem Gradient Boosting, Cat Boosting and Light Boosting
+- Allow user to make prediction from a webpage
 
 
 # Requirements
