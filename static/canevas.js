@@ -2,7 +2,7 @@
 var canvas = document.getElementById("canvas1");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = 500);
-const x = 26;
+const x = 25;
 canvas.style.position = 'relative';
 canvas.style.zIndex = 1;var ctx1 = canvas.getContext("2d");
 var ctx2 = canvas.getContext("2d");
@@ -125,7 +125,7 @@ function road_creation(ctx) {
 function car_animation() {
     const x_pos = 0;
     const y_pos = 200;
-    const predict_price = 26548;
+    const predict_price = 25618;
     const car = new Image(30,25);
     const wheel_forward = new Image(30,25);
     const wheel_backward = new Image(30,25);

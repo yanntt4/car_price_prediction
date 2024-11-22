@@ -42,103 +42,97 @@ def preparation():
         # Body start
         with tag('body', klass = 'background'):
             with tag('div', klass = "container", id="container"):
-                with tag('div', klass = "row"):
+                with tag('div', klass = "row encadrer-un-contenu"):
                     with tag('div', klass = "col-md-9"):
-                        line('h1', "Prix d'une voiture ancienne", klass = "text-center title_s")
+                        line('h1', "Prevision du prix d'un vehicule d'occasion", klass = "text-center title_s_purple")
                     with tag('div', klass = "col"):
                         doc.asis('<img src="/static/old_car_2.jpg" alt="Car" width=100% height=100% title="Car"/>')
                     
                 # Launching prediction with clicking on submit button
-                with tag('form', action = "{{url_for('treatment')}}", method = "POST", enctype = "multipart/form-data", id = "URL"):
+                with tag('form', action = "{{url_for('treatment')}}", method = "POST", enctype = "multipart/form-data", id = "URL", klass = "encadrer-un-contenu"):
                     text("{{ form.csrf_token }}")
 
                     # Brand
-                    with tag('div', klass = "row"):
-                        with tag('div', klass = "col-md-9"):
-                            with tag('div', klass = "row justify-content-around margin_1"): 
-                                with tag('div', klass = "col-md-6"):
-                                    line('p', 'Marque du vehicule', klass = "p2")
-                                with tag('div', klass = "col-md-4"):
-                                    text("{{ form.brand() }}")
+                    with tag('div', klass = "row justify-content-start"):
+                        with tag('div', klass = "col-md-3"):
+                            line('p', 'Marque du vehicule', klass = "p2")
+                        with tag('div', klass = "col-md-3 custom-select"):
+                            text("{{ form.brand() }}")
     
                     # Model
                     line('hr','')
-                    with tag('div', klass = "row"):
-                        with tag('div', klass = "col-md-9"):
-                            with tag('div', klass = "row justify-content-around margin_1"):
+                    with tag('div', klass = "row justify-content-between"):
+                        with tag('div', klass = "col-md-6"):
+                            with tag('div', klass = "row justify-content-between"):
                                 with tag('div', klass = "col-md-6"):
                                     line('p', 'Modele du vehicule', klass = "p2")
-                                with tag('div', klass = "col-md-4"):
+                                with tag('select', name = "model", id="model", style="max-width:50%;", klass = "custom-select"):
                                     text("{{ form.model() }}")
+                                            
+                        # Fuel type
+                        with tag('div', klass = "col-md-5"):
+                            with tag('div', klass = "row justify-content-between"): 
+                                with tag('div', klass = "col-md-6"):
+                                    line('p', 'Carburant utilise', klass = "p2")
+                                with tag('select', name = "fuel_type", id="fuel_type", style="max-width:50%;", klass = "custom-select"):
+                                    text("{{ form.fuel_type() }}")
                                     
                     # Vehicle Age
                     line('hr','')
-                    with tag('div', klass = "row"):
-                        with tag('div', klass = "col-md-9"):
-                            with tag('div', klass = "row justify-content-around margin_1"):
+                    with tag('div', klass = "row justify-content-between"):
+                        with tag('div', klass = "col-md-6"):
+                            with tag('div', klass = "row justify-content-between"):
                                 with tag('div', klass = "col-md-6"):
                                     line('p', 'Annee de mise en circulation', klass = "p2")
                                 with tag('div', klass = "col", style="text-align:center"):
                                     text("{{ form.model_year() }}")
-                    
-                    # Milage
-                    line('hr','')
-                    with tag('div', klass = "row"):
-                        with tag('div', klass = "col-md-9"):
-                            with tag('div', klass = "row justify-content-around margin_1"):
-                                with tag('div', klass = "col-md-6"):
+                            
+                        # Milage
+                        with tag('div', klass = "col-md-5"):
+                            with tag('div', klass = "row justify-content-between"):
+                                with tag('div', klass = "col-md-5"):
                                     line('p', 'Kilometrage du vehicule', klass = "p2")
-                                with tag('div', klass = "col", style="text-align:center"):
+                                with tag('div', klass = "col-md", style="text-align:center"):
                                     text("{{ form.milage() }}")
-                    
-                    # Fuel type
-                    line('hr','')
-                    with tag('div', klass = "row"):
-                        with tag('div', klass = "col-md-9"):
-                            with tag('div', klass = "row justify-content-around margin_1"): 
-                                with tag('div', klass = "col-md-6"):
-                                    line('p', 'Carburant utilise', klass = "p2")
-                                with tag('div', klass = "col", style="text-align:center"):
-                                    text("{{ form.fuel_type() }}")
                     
                     # Engine
                     line('hr','')
-                    with tag('div', klass = "row"):
-                        with tag('div', klass = "col-md-9"):
-                            with tag('div', klass = "row justify-content-around margin_1"):
-                                with tag('div', klass = "col-md-4"):
-                                    line('p', 'Type de moteur', klass = "p2")
-                                with tag('select', name = "engine", id="engine"):
-                                    text("{{ form.engine() }}")
+                    with tag('div', klass = "row justify-content-between"):
+                        with tag('div', klass = "col-md-6"):
+                            with tag('div', klass = "row"):
+                                with tag('div', klass = "col-md"):
+                                    with tag('div', klass = "row justify-content-between"):
+                                        with tag('div', klass = "col-md"):
+                                            line('p', 'Type de moteur', klass = "p2")
+                                        with tag('select', name = "engine", id="engine", style="max-width:50%;", klass = "custom-select"):
+                                            text("{{ form.engine() }}")
                     
                     # Transmission
-                    line('hr','')
-                    with tag('div', klass = "row"):
-                        with tag('div', klass = "col-md-9"):
-                            with tag('div', klass = "row justify-content-around margin_1"):
-                                with tag('div', klass = "col-md-4"):
-                                    line('p', 'Type de transmission', klass = "p2")
-                                with tag('select', name = "transmission", id="transmission"):
-                                    text("{{ form.transmission() }}")
+                        with tag('div', klass = "col-md-5"):
+                            with tag('div', klass = "row"):
+                                with tag('div', klass = "col-md"):
+                                    with tag('div', klass = "row justify-content-between"):
+                                        with tag('div', klass = "col-md"):
+                                            line('p', 'Type de transmission', klass = "p2")
+                                        with tag('select', name = "transmission", id="transmission", style="max-width:50%;", klass = "custom-select"):
+                                            text("{{ form.transmission() }}")
                     
                     # Exterior color
                     line('hr','')
-                    with tag('div', klass = "row"):
-                        with tag('div', klass = "col-md-9"):
-                            with tag('div', klass = "row justify-content-around margin_1"): 
-                                with tag('div', klass = "col-md-6"):
-                                    line('p', 'Marque du vehicule', klass = "p2")
-                                with tag('div', klass = "col-md-4"):
+                    with tag('div', klass = "row justify-content-center"):
+                        with tag('div', klass = "col-md-8"):
+                            with tag('div', klass = "row"): 
+                                with tag('div', klass = "col-md-12"):
+                                    line('p', 'Couleur exterieure', klass = "p2")
+                                with tag('div', klass = "col custom-select", style="text-align:center max-width:50%;"):
                                     text("{{ form.ext_col() }}")
-                    
-                    # Interior color
-                    line('hr','')
-                    with tag('div', klass = "row"):
-                        with tag('div', klass = "col-md-9"):
-                            with tag('div', klass = "row justify-content-around margin_1"): 
-                                with tag('div', klass = "col-md-6"):
-                                    line('p', 'Marque du vehicule', klass = "p2")
-                                with tag('div', klass = "col-md-4"):
+                            
+                        # Interior color
+                        with tag('div', klass = "col-md"):
+                            with tag('div', klass = "row"): 
+                                with tag('div', klass = "col-md-12"):
+                                    line('p', 'Couleur interieure', klass = "p2")
+                                with tag('div', klass = "col custom-select", style="text-align:center max-width:50%;"):
                                     text("{{ form.int_col() }}")
                     
                     # Accident history
@@ -166,18 +160,20 @@ def preparation():
                                     line('p', 'Etat correct apres nettoyage ?', klass = "p2")
                                 with tag('div', klass = "col", style="text-align:center"):
                                     with tag('div', klass = "row"):
-                                        with tag('div', klass = "col-md-4"):
+                                        with tag('div', klass = "col-md-5"):
                                             doc.input(name = 'clean_title', id = "clean_title", type = 'radio', value = 0, klass = 'radio_text')
                                             text("NON")
-                                        with tag('div', klass = "col-md-4"):
+                                        with tag('div', klass = "col-md-5"):
                                             doc.input(name = 'clean_title', id = "clean_title", type = 'radio', value = 1, klass = 'radio_text')
                                             text("OUI")
                     
                     # Submit button
                     with tag('div', klass = "row"):
                         with tag('div', klass = "text-center div2"):
-                            with tag('button', id = 'submit_button', name = "action", klass="btn btn-primary", value = 'Predict'):
-                                text('Predict')
+                            with tag('button', id = 'submit_button', name = "action", klass="button", onclick = "this.classList.toggle('button--loading')"):
+                                with tag('span', klass = "button__text"):
+                                    text("Predire le prix du vehicule")
+                            
         
             # Script for javascript
             doc.asis('<script src="/static/predict.js"></script>')
