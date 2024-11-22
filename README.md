@@ -10,7 +10,7 @@ Data can be found on Kaggle website : https://www.kaggle.com/competitions/playgr
 ![image](https://github.com/user-attachments/assets/8f1770f3-bbf4-4440-a0ea-3c9cdbc51a02)
 ![image](https://github.com/user-attachments/assets/cbc3e9fc-1354-459b-9b34-73dad002ceac)
 
-<img src="![preparation](https://github.com/user-attachments/assets/2cded75f-18a6-4f85-9ae0-11e676f79a74)" alt="Alt Text" width="300" height="200">
+<img src="![image](https://github.com/yanntt4/car_price_prediction/blob/main/readme_photo/completion.JPG)" alt="Alt Text" width="300" height="200">
 
 
 # Usage
