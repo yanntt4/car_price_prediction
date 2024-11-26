@@ -16,7 +16,7 @@ Data can be found on Kaggle website : https://www.kaggle.com/competitions/playgr
 
 
 # Results
-<img src="https://github.com/yanntt4/car_price_prediction/blob/main/readme_photo/preparation.JPG" alt="Alt Text" width="150" height="100"><img src="https://github.com/yanntt4/car_price_prediction/blob/main/readme_photo/completion.JPG" alt="Alt Text" width="150" height="100"><img src="https://github.com/yanntt4/car_price_prediction/blob/main/readme_photo/result.JPG" alt="Alt Text" width="150" height="100">
+<img src="https://github.com/yanntt4/car_price_prediction/blob/main/readme_photo/preparation.JPG" alt="Alt Text" width="300" height="200"><img src="https://github.com/yanntt4/car_price_prediction/blob/main/readme_photo/completion.JPG" alt="Alt Text" width="300" height="200"><img src="https://github.com/yanntt4/car_price_prediction/blob/main/readme_photo/result.JPG" alt="Alt Text" width="300" height="200">
 
 
 # Usage
