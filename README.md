@@ -40,4 +40,4 @@ xgboost | 2.1.0 |
 lightgbm | 4.5.0 |
 
 # Follow up
-During the displaying of the results, the animation is flashing. No solution has been found yet to avoid the problem
+During result displaying for car price prediction, the animation is flashing. No solution has been found yet to avoid the problem
