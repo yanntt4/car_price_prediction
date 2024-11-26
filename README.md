@@ -1,4 +1,4 @@
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)(https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue))](https://www.python.org/downloads/release/python-360/)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-360/)
 ![Tensorflow 2.17.0](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)
 ![Conda](https://img.shields.io/badge/conda-342B029.svg?&style=for-the-badge&logo=anaconda&logoColor=white)
