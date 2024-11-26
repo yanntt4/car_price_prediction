@@ -46,6 +46,8 @@ Application can be used for two main usages :
 
 **lightgbm** : 4.5.0
 
+| First Header  | Second Header |
+| ------------- | ------------- |
 | **tqdm** : 4.66.4  | **pandas** : 2.2.2  |
 | **numpy** : 1.26.4  | **matplotlib** : 3.9.1  |
 
