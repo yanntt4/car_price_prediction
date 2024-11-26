@@ -26,11 +26,15 @@ Application can be used for two main usages :
 
 
 # Requirements
-| Library | Version | | Library | Version | Library | Version | Library | Version | Library | Version |
-| :-: | :-: | | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| tqdm | 4.66.4  | | pandas | 2.2.2  | openpyxl | 3.1.5  | tensorflow | 2.17.0 | catboost | 1.2.5 |
-| numpy | 1.26.4  | | matplotlib | 3.9.1  | scikit-learn | 1.5.1 | xgboost | 2.1.0 | lightgbm | 4.5.0 |
+| Library | Version | 
+| :-: | :-: |
+| tqdm | 4.66.4  |
+| numpy | 1.26.4  |
 
+| Library | Version | Library | Version | Library | Version | Library | Version |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| pandas | 2.2.2  | openpyxl | 3.1.5  | tensorflow | 2.17.0 | catboost | 1.2.5 |
+| matplotlib | 3.9.1  | scikit-learn | 1.5.1 | xgboost | 2.1.0 | lightgbm | 4.5.0 |
 
 # Follow up
 With the current version, the program uses `BDD.xlsx` to calculate emission. A method has been found to calculate main emission using any origin and destination.
