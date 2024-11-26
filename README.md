@@ -21,7 +21,7 @@ Data can be found on Kaggle website : https://www.kaggle.com/competitions/playgr
 
 # Usage
 Application can be used for two main usages :
-- Analyse data to create machine learning/deep learning model to estimate car price. 6 algorithms can be used to create model : Random Forest, Gradient Boosting, Neural Network, Extrem Gradient Boosting, Cat Boosting and Light Boosting
+- Analyse data to create machine learning/deep learning model to estimate car price. 6 algorithms can be used to create model : Random Forest, Gradient Boosting, Neural Network, Extrem Gradient Boosting, Cat Boosting and Light Boosting. A spcific github page is available to present the model
 - Allow user to make prediction from a webpage
 
 
