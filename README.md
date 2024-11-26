@@ -40,7 +40,4 @@ xgboost | 2.1.0 |
 lightgbm | 4.5.0 |
 
 # Follow up
-With the current version, the program uses `BDD.xlsx` to calculate emission. A method has been found to calculate main emission using any origin and destination.
-It has not been impletemented yet.
-
-For PRE and POST transport using ROAD or RAIL, no method is currently available to calculate emission from any origin or destination. 
+During the displaying of the results, the animation is flashing. No solution has been found yet to avoid the problem
