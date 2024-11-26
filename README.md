@@ -26,6 +26,8 @@ Application can be used for two main usages :
 
 
 # Requirements
+**tqdm** : 4.66.4
+
 **pandas** : 2.2.2
 
 **numpy** : 1.26.4
@@ -33,6 +35,16 @@ Application can be used for two main usages :
 **matplotlib** : 3.9.1
 
 **openpyxl** : 3.1.5
+
+**scikit-learn** : 1.5.1
+
+**tensorflow** : 2.17.0
+
+**xgboost** : 2.1.0
+
+**catboost** : 1.2.5
+
+**lightgbm** : 4.5.0
 
 
 # Follow up
